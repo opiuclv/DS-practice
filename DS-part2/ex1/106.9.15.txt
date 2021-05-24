@@ -1,0 +1,39 @@
+import java.util.* ;
+
+public class first  // first¬OÀÉ¦W
+{
+  public static void main (String[] args) throws Throwable {
+
+    int i = 2 ;
+    int num2 ;
+
+    Scanner scanner = new Scanner(System.in) ;
+    num2 = scanner.nextInt();
+
+    int[] num = new int[i] ; // x is a reference to int[]
+
+    num[0] = 1 ;
+    num[1] = 1 ;
+
+    while( num2 >= 0 ) {
+
+      num[i + 1] = num[i] + num[i - 1] ;
+      i ++ ;
+
+      num2 -- ;
+    } // while 
+
+    int num3 = 0 ;
+    int start = 0 ;
+    while( start < i ) {
+      System.out.printf( "[ " + num3 + "]" + num[start] ) ;
+      i -- ;
+      num3 ++ ;
+    } // while
+
+    
+    scanner.close();
+  } // main
+
+}
+
